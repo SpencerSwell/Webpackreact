@@ -8,7 +8,7 @@ import FlightDetails from './flight.details'
 import FlightList from './flight.list.js';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Route} from 'react-router';
-import './styles.css';
+import './styles.scss';
 
 
 const routes =(
