@@ -8,10 +8,15 @@ class FlightList extends Component  {
 
   constructor(props) {
     super()
-    console.log("the request ran");
+    this.getData = this.getData.bind(this);
+
    
   }
   
+  getData() {
+    console.log("GETTING A FLIGHT DATA");
+    this.props.dispatch(actions.getFlightData())
+  }
 
 
   render () {
@@ -36,6 +41,7 @@ class FlightList extends Component  {
       <i className="desc"> 10 passenger, light jet </i>
       </Link>
       </div>
+      <button onClick={this.getData}>Get flight data </button>
 
       <div className="flight">
       <p className="day"> 29 </p>
